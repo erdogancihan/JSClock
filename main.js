@@ -15,7 +15,7 @@ function clock() {
   minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
 
   const hours = now.getHours();
-  const hourDegrees = (hours / 12) * 360;
+  const hourDegrees = ((hours / 12) * 360)+(minutes/2);
   hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
   //removes transition to prevent full rotate at second 0
